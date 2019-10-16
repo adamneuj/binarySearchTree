@@ -9,13 +9,13 @@ namespace binarySearchTree
     class Node
     {
         public int data;
-        public Node root;
+        public Node parent;
         public Node rightChild;
         public Node leftChild;
 
-        public Node(int value)
+        public Node(int data)
         {
-            data = value;
+            this.data = data;
         }
     }
 }

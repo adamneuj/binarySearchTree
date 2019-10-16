@@ -8,20 +8,40 @@ namespace binarySearchTree
 {
     class BinarySearchTree
     {
-        Node start;
+        Node root;
+        Node currentNode;
         public BinarySearchTree()
         {
-            
+            root = null;
+            currentNode = null;
         }
-        public void Add(int data)
+        public Node Add(int data)
         {
             Node node = new Node(data);
-            if(start == null)
+            if(root == null)
             {
-                start = node;
-                return;
+                root = node;
+                return root;
             }
+            else if(data <= root.data)
+            {
+                root.leftChild = node;
+                return root;
+            }
+            else
+            {
+                root.rightChild = node;
+                return root;
+            }
+        }
+        public void Traverse(Node node)
+        {
+            if(node == null)
+            {
 
+            }
+            Traverse(node.leftChild);
+            Traverse(node.rightChild);
         }
     }
 }
