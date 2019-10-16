@@ -34,14 +34,14 @@ namespace binarySearchTree
                 return root;
             }
         }
-        public void Traverse(Node node)
+        public void Search(Node node)
         {
             if(node == null)
             {
 
             }
-            Traverse(node.leftChild);
-            Traverse(node.rightChild);
+            Search(node.leftChild);
+            Search(node.rightChild);
         }
     }
 }
