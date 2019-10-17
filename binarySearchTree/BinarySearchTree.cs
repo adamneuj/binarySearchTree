@@ -15,7 +15,7 @@ namespace binarySearchTree
             root = null;
             currentNode = null;
         }
-        public Node Add(int data)
+        public Node Add(int data) //needs to rework
         {
             Node node = new Node(data);
             if(root == null)
@@ -23,15 +23,25 @@ namespace binarySearchTree
                 root = node;
                 return root;
             }
-            else if(data <= root.data)
+            Node temp = root;
+            if(data <= root.data)
             {
-                root.leftChild = node;
-                return root;
+                while(root.leftChild == null)
+                {
+                    root.leftChild = node;
+                }
+                temp.leftChild = node;
+                return node;
+
             }
             else
             {
-                root.rightChild = node;
-                return root;
+                while(root.rightChild == null)
+                {
+                    root.rightChild = node;
+                }
+                temp.rightChild = node;
+                return node;
             }
         }
         public void Search(Node node) //still need to finish
