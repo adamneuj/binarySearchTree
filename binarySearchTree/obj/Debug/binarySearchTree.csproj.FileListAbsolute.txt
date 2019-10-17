@@ -1,0 +1,6 @@
+C:\Users\adamn\Documents\devcodecamp\week_06\Projects\BinarySearchTree\binarySearchTree\bin\Debug\binarySearchTree.exe.config
+C:\Users\adamn\Documents\devcodecamp\week_06\Projects\BinarySearchTree\binarySearchTree\bin\Debug\binarySearchTree.exe
+C:\Users\adamn\Documents\devcodecamp\week_06\Projects\BinarySearchTree\binarySearchTree\bin\Debug\binarySearchTree.pdb
+C:\Users\adamn\Documents\devcodecamp\week_06\Projects\BinarySearchTree\binarySearchTree\obj\Debug\binarySearchTree.csprojAssemblyReference.cache
+C:\Users\adamn\Documents\devcodecamp\week_06\Projects\BinarySearchTree\binarySearchTree\obj\Debug\binarySearchTree.exe
+C:\Users\adamn\Documents\devcodecamp\week_06\Projects\BinarySearchTree\binarySearchTree\obj\Debug\binarySearchTree.pdb
