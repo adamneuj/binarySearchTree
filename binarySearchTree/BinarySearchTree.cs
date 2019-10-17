@@ -24,21 +24,20 @@ namespace binarySearchTree
             Node temp = root;
             if(data <= root.data)
             {
-                while(temp.leftChild == null)
+                while(temp.leftChild != null)
                 {
-                    temp.leftChild = node;
+                    temp = temp.leftChild;
                 }
-                node = temp;
+                temp.leftChild = node;
                 return node;
-
             }
             else
             {
-                while(temp.rightChild == null)
+                while(temp.rightChild != null)
                 {
-                    temp.rightChild = node;
+                    temp = temp.rightChild;
                 }
-                node = temp;
+                temp.rightChild = node;
                 return node;
             }
         }
