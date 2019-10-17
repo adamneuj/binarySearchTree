@@ -56,17 +56,18 @@ namespace binarySearchTree
                     while (temp.leftChild != null)
                     {
                         temp = temp.leftChild;
+                        if (data == temp.data)
+                        {
+                            Console.WriteLine("Found node: " + data);
+                            Console.ReadLine();
+                        }
+                        else
+                        {
+                            Console.WriteLine("No node exists.");
+                            Console.ReadLine();
+                        }
                     }
-                    if(data == temp.data)
-                    {
-                        Console.WriteLine("Found node: " + data);
-                        Console.ReadLine();
-                    }
-                    else
-                    {
-                        Console.WriteLine("No node exists.");
-                        Console.ReadLine();
-                    }
+
                 }
             }
             else
@@ -81,16 +82,16 @@ namespace binarySearchTree
                     while (temp.rightChild != null)
                     {
                         temp = temp.rightChild;
-                    }
-                    if (data == temp.data)
-                    {
-                        Console.WriteLine("Found node: " + data);
-                        Console.ReadLine();
-                    }
-                    else
-                    {
-                        Console.WriteLine("No node exists.");
-                        Console.ReadLine();
+                        if (data == temp.data)
+                        {
+                            Console.WriteLine("Found node: " + data);
+                            Console.ReadLine();
+                        }
+                        else
+                        {
+                            Console.WriteLine("No node exists.");
+                            Console.ReadLine();
+                        }
                     }
                 }
             }
