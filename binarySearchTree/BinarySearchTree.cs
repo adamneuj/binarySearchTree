@@ -63,11 +63,9 @@ namespace binarySearchTree
                         }
                         else
                         {
-                            Console.WriteLine("No node exists.");
-                            Console.ReadLine();
+                            continue;
                         }
                     }
-
                 }
             }
             else
@@ -89,8 +87,7 @@ namespace binarySearchTree
                         }
                         else
                         {
-                            Console.WriteLine("No node exists.");
-                            Console.ReadLine();
+                            continue;
                         }
                     }
                 }
