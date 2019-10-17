@@ -13,7 +13,7 @@ namespace binarySearchTree
         {
             root = null;
         }
-        public Node Add(int data) //needs to rework
+        public Node Add(int data)
         {
             Node node = new Node(data);
             if(root == null)
@@ -41,14 +41,59 @@ namespace binarySearchTree
                 return node;
             }
         }
-        public void Search(Node node) //still need to finish
+        public void Search(int data)
         {
-            if(node == null)
+            Node temp = root;
+            if (data <= root.data)
             {
-
+                if (data == temp.data)
+                {
+                    Console.WriteLine("Found node: " + data);
+                    Console.ReadLine();
+                }
+                else
+                {
+                    while (temp.leftChild != null)
+                    {
+                        temp = temp.leftChild;
+                    }
+                    if(data == temp.data)
+                    {
+                        Console.WriteLine("Found node: " + data);
+                        Console.ReadLine();
+                    }
+                    else
+                    {
+                        Console.WriteLine("No node exists.");
+                        Console.ReadLine();
+                    }
+                }
             }
-            Search(node.leftChild);
-            Search(node.rightChild);
+            else
+            {
+                if (data == temp.data)
+                {
+                    Console.WriteLine("Found node: " + data);
+                    Console.ReadLine();
+                }
+                else
+                {
+                    while (temp.rightChild != null)
+                    {
+                        temp = temp.rightChild;
+                    }
+                    if (data == temp.data)
+                    {
+                        Console.WriteLine("Found node: " + data);
+                        Console.ReadLine();
+                    }
+                    else
+                    {
+                        Console.WriteLine("No node exists.");
+                        Console.ReadLine();
+                    }
+                }
+            }
         }
     }
 }
