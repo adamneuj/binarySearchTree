@@ -9,11 +9,9 @@ namespace binarySearchTree
     class BinarySearchTree
     {
         Node root;
-        Node currentNode;
         public BinarySearchTree()
         {
             root = null;
-            currentNode = null;
         }
         public Node Add(int data) //needs to rework
         {
@@ -26,21 +24,21 @@ namespace binarySearchTree
             Node temp = root;
             if(data <= root.data)
             {
-                while(root.leftChild == null)
+                while(temp.leftChild == null)
                 {
-                    root.leftChild = node;
+                    temp.leftChild = node;
                 }
-                temp.leftChild = node;
+                node = temp;
                 return node;
 
             }
             else
             {
-                while(root.rightChild == null)
+                while(temp.rightChild == null)
                 {
-                    root.rightChild = node;
+                    temp.rightChild = node;
                 }
-                temp.rightChild = node;
+                node = temp;
                 return node;
             }
         }
