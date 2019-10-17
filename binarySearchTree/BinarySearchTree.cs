@@ -41,7 +41,7 @@ namespace binarySearchTree
                 return node;
             }
         }
-        public void Search(int data) //Need to rework
+        public void Search(int data)
         {
             Node temp = root;
             if (data <= root.data)
